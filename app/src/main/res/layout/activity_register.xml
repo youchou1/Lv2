@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+    <EditText
+        android:id="@+id/et_register_username"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/register_username"
+        android:inputType="number"
+        android:layout_above="@id/et_register_password"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:drawableStart="@drawable/ic_bussiness_man"
+        />
+
+    <EditText
+        android:id="@+id/et_register_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/register_password"
+        android:inputType="textPassword"
+        android:layout_centerInParent="true"
+        android:drawableStart="@drawable/ic_password"/>
+    <Button
+        android:id="@+id/btn_register_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_registerNow"
+        android:layout_below="@id/et_register_password"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

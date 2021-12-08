@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/cb_remember_pass"
+        android:layout_width="29dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/et_main_password"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="9dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_main_password"
+        android:layout_toRightOf="@id/cb_remember_pass"
+        android:text="@string/Remember_password"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/et_main_username"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/et_main_password"
+        android:drawableStart="@drawable/ic_bussiness_man"
+        android:hint="@string/login_username"
+        android:inputType="number"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <EditText
+        android:id="@+id/et_main_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableStart="@drawable/ic_password"
+        android:hint="@string/login_password"
+        android:inputType="textPassword" />
+    <ImageView
+        android:id="@+id/img_main_head"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/et_main_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/img_main_head" />
+
+    <Button
+        android:id="@+id/btn_main_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_main_register"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/login" />
+
+    <Button
+        android:id="@+id/btn_main_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_main_password"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/register"/>
+
+</RelativeLayout>
