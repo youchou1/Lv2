@@ -43,10 +43,10 @@ class ForceOfflineReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(final Context context, Intent intent) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
-        builder.setTitle("Warning");
-        builder.setMessage("You are forced to be offline.Please try to login again.");
+        builder.setTitle("警告");
+        builder.setMessage("你真的想离开我吗，定没有你好果汁吃嗷，555~");
         builder.setCancelable(false);
-        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("快滚", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 ActivityCollector.finishAll();

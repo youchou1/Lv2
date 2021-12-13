@@ -26,5 +26,5 @@
         android:id="@+id/force_offline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Send force offline broadcast"/>
+        android:text="送你回去的法宝"/>
 </FrameLayout>

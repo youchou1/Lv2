@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import java.util.Random;
 
@@ -46,5 +48,13 @@ public class Lv1 extends BaseActivity {
                 v.setY(y);
             }
         });
+    }
+    @Override
+    public boolean onKeyDown(int KeyCode, KeyEvent event){
+        if(KeyCode ==KeyEvent.KEYCODE_BACK){
+            Toast.makeText(Lv1.this,"退出键已经被我锁死了哦",Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        return super.onKeyDown(KeyCode,event);
     }
 }

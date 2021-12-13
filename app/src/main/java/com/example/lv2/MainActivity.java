@@ -28,9 +28,6 @@ public class MainActivity extends BaseActivity {
         initLogin();
         initRegister();
         initRemember();
-
-
-
     }
     private void initRemember () {
         SharedPreferences pref = getSharedPreferences("data", MODE_PRIVATE);
